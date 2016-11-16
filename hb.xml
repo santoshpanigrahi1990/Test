@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "F:\webservice practice\Hibernate\hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.satya.hibernate.model.Addresses" table="address">
+		<composite-id>
+			<key-property name="userId" column="userid" />
+			<key-property name="addressId" column="addressid" />
+			<key-property name="addressType" column="addresstype" />
+		</composite-id>
+		<property name="houseNo" column="houseno" />
+		<property name="street" column="street" />
+		<property name="city" column="city" />
+		<property name="state" column="state" />
+		<property name="country" column="country" />
+		<property name="pinCode" column="pincode" />
+	</class>
+</hibernate-mapping>
